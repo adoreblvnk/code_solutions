@@ -1,6 +1,6 @@
-# Code Solutions
+# Code Solutions & DSA Cheat Sheet
 
-Compilation of code solutions for LeetCode & Codewars.
+Compilation of code solutions for LeetCode & Codewars & [DSA Cheat Sheet](DSA_concepts.md).
 
 prod by blvnk.
 
