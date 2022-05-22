@@ -2,7 +2,7 @@ from typing import List
 
 # Result:
 # Runtime: 1193 ms, faster than 67.15% of Python3 online submissions for Best Time to Buy and Sell Stock.
-# Memory Usage: 25 MB, less than 86.89% of Python3 online submissions for Best Time to Buy and Sell Stock.
+# Memory Usage: 25 MB, less than 86.89% of Python3 online submissions for Best Time to Buy and Sell Stock. 
 # https://leetcode.com/submissions/detail/704816052/
 
 
