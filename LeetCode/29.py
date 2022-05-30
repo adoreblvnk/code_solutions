@@ -6,10 +6,10 @@ class Solution:
     def divide(self, dividend: int, divisor: int) -> int:
         quot_abs = abs(dividend) // abs(divisor)
         ans = quot_abs * [-1, 1][dividend / divisor > 0]
-        return min(max(-2**31, ans), 2**31-1)
+        return min(ans, 2**31-1)
 
     def divide_v2(self, dividend: int, divisor: int) -> int:
-        return min(max(-2**31, abs(dividend) // abs(divisor) * [-1, 1][dividend / divisor > 0]), 2**31-1)
+        return min(abs(dividend) // abs(divisor) * [-1, 1][dividend / divisor > 0], 2**31-1)
 
 
 print(Solution().divide(10, 3))
