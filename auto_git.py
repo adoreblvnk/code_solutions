@@ -41,8 +41,8 @@ def make_commit(message: str, lang: str = "py") -> None:
     repo.index.commit(f"feat({lang}): {message}")
 
 
-def git_push() -> None:
-    repo.remote(name="origin").push()
+def git_push(remote_name: str = "origin") -> None:
+    repo.remote(name=remote_name).push()
 
 
 if __name__ == "__main__":
