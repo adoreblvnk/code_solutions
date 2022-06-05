@@ -1,5 +1,4 @@
 from git import Repo
-import os
 
 
 class CustomError(Exception):
