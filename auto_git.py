@@ -30,10 +30,10 @@ def validate_untracked_files() -> None:
 
 def get_commit_message(file_to_add: str) -> str:
     with open(file_to_add, 'r') as f:
-        title = f.readlines()[0]
+        title: str = f.readlines()[0]
         if not title.startswith("# "):
             raise InvalidTitleError("Title must start with '# '")
-        title = title[2:-1].lower()
+        title: str = title[2:-1].lower()
     return title
 
 
@@ -50,11 +50,11 @@ if __name__ == "__main__":
 
     # add
     validate_untracked_files()
-    file_to_add = repo.untracked_files[0]
+    file_to_add: str = repo.untracked_files[0]
     repo.index.add(file_to_add)
 
     # commit
-    message = get_commit_message(file_to_add)
+    message: str = get_commit_message(file_to_add)
     make_commit(message)
 
     # push
