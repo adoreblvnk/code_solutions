@@ -1,5 +1,4 @@
-from typing import List
-
+# Fizz Buzz
 
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
@@ -16,4 +15,4 @@ class Solution:
         return answer
 
 
-print(Solution.fizzBuzz("", 15))
+print(Solution().fizzBuzz(15))

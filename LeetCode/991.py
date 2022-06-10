@@ -11,4 +11,4 @@ class Solution:
             operations += 1
         return startValue - target + operations
       
-print(Solution.()brokenCalc(2, 3))
+print(Solution().brokenCalc(2, 3))

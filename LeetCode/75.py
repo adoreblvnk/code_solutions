@@ -1,3 +1,5 @@
+# How Many Numbers Are Smaller Than the Current Number
+
 class Solution:
     def sortColors(self, nums) -> None:
         """
@@ -11,4 +13,4 @@ class Solution:
         nums[red+white:red+white+blue] = [2] * blue
 
 
-Solution.sortColors("", nums=[2, 0, 2, 1, 1, 0])
+print(Solution().sortColors(nums=[2, 0, 2, 1, 1, 0]))
