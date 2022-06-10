@@ -15,4 +15,4 @@ class Solution:
         return answer
 
 
-print(Solution.fizzBuzz(15))
+print(Solution().fizzBuzz(15))
