@@ -1,3 +1,5 @@
+# Broken Calculator
+
 class Solution:
     def brokenCalc(self, startValue: int, target: int) -> int:
         operations = 0
@@ -8,8 +10,5 @@ class Solution:
                 target //= 2
             operations += 1
         return startValue - target + operations
-
-
-print(Solution.brokenCalc("", 2, 3))
-print(Solution.brokenCalc("", 5, 8))
-# print(Solution.brokenCalc("", 3, 10))
+      
+print(Solution.()brokenCalc(2, 3))
