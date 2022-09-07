@@ -1,4 +1,4 @@
-// 20 Valid Parentheses
+// Valid Parentheses
 // Results:
 // Runtime: 0 ms, faster than 100.00% of Go online submissions for Valid Parentheses.
 // Memory Usage: 2.1 MB, less than 45.81% of Go online submissions for Valid Parentheses.
