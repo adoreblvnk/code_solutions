@@ -1,26 +1,31 @@
-# Code Solutions & DSA Cheat Sheet
+<div align="center">
+    <img src="./img/leetcode.png" width=100> <!-- Logo -->
+    <h1>Code Solutions & DSA Cheat Sheet</h1> <!-- Title -->
+    <p>
+      Compilation of code solutions for LeetCode & Codewars & <a href="./DSA_concepts.md">DSA Cheat Sheet</a>.
+    </p>
+    <p>
+      Python • Golang
+    </p> <!-- Description -->
+</div>
+
+---
+
+## About
 
 Compilation of code solutions for LeetCode & Codewars & [DSA Cheat Sheet](DSA_concepts.md).
 
+The challenges are selected by relevance. Easy if I'm new to the language, or a mix of relevant topics for interview.
+
 prod by blvnk.
 
-## LeetCode
+## Roadmap <!-- optional -->
 
-![](img/leetcode.png)
+- Add strategy to solve for each challenge.
 
-Each challenge is comprised of `challenge.md` & `solution.py`. Difficulty is marked in `challenge.md`.
+## License <!-- optional -->
 
-## Codewars
-
-![codewars python banner](https://i.imgur.com/AOkwQYU.png)
-
-[Codewars](codewars.com) Python solutions.
-
-Each [Kata](docs.codewars.com/concepts/kata/) challenge has a folder; solution is in the `.py` file, question is in the markdown file.
-
-![](https://i.imgur.com/DjMj0gu.png)
-
-Certain answers have multiple solutions. those tagged with `# solution` are the official solutions, as shown above.
+This project is licensed under the terms of the MIT license.
 
 ## Credits
 
