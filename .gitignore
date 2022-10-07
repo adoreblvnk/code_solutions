@@ -1,3 +1,4 @@
+# Python
 # Byte-Compiled / Optimized / DLL Files
 __pycache__/
 **/__pycache__/
@@ -27,6 +28,40 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# C++
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
 
 # VS Code
 .vscode/
