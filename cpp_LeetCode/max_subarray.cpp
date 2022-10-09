@@ -1,3 +1,9 @@
+// Maximum Subarray
+// Results:
+// Runtime: 119 ms, faster than 93.30% of C++ online submissions for Maximum Subarray.
+// Memory Usage: 67.8 MB, less than 10.99% of C++ online submissions for Maximum Subarray.
+// https://leetcode.com/submissions/detail/818371827/
+
 #include <algorithm>
 #include <iostream>
 #include <map>
@@ -5,8 +11,8 @@
 #include <vector>
 
 using std::cout, std::endl;
+using std::max, std::sort;
 using std::string, std::vector, std::map;
-using std::sort;
 
 // overloads operator << to print formatted vectors.
 template <typename T>
@@ -42,7 +48,21 @@ std::ostream& operator<<(std::ostream& os, const map<T, T1> dict) {
     return os << "}";
 }
 
+class Solution {
+   public:
+    int maxSubArray(vector<int>& nums) {
+        int max_sum{nums[0]}, current{nums[0]};
+        for (int i{1}; i < nums.size(); i++) {
+            current += nums[i];
+            current = (current > nums[i]) ? current : nums[i];
+            max_sum = (max_sum > current) ? max_sum : current;
+        }
+        return max_sum;
+    }
+};
+
 int main() {
-    
+    vector<int> nums{-2, 1, -3, 4, -1, 2, 1, -5, 4};
+    cout << Solution().maxSubArray(nums) << endl;
     return 0;
 }
