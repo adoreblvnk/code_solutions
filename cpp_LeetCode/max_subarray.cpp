@@ -50,6 +50,7 @@ std::ostream& operator<<(std::ostream& os, const map<T, T1> dict) {
 
 class Solution {
    public:
+    // Kadane's Algorithm: keep track of current sum & max sum.
     int maxSubArray(vector<int>& nums) {
         int max_sum{nums[0]}, current{nums[0]};
         for (int i{1}; i < nums.size(); i++) {
