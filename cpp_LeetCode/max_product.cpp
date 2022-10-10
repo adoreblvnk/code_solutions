@@ -1,3 +1,9 @@
+// Maximum Product Subarray
+// Results:
+// Runtime: 3 ms, faster than 98.87% of C++ online submissions for Maximum Product Subarray.
+// Memory Usage: 13.9 MB, less than 25.23% of C++ online submissions for Maximum Product Subarray.
+// https://leetcode.com/submissions/detail/819052657/
+
 #include <algorithm>
 #include <iostream>
 #include <map>
@@ -42,7 +48,25 @@ std::ostream& operator<<(std::ostream& os, const map<T, T1> dict) {
     return os << "}";
 }
 
-int main() {
+class Solution {
+   public:
+    // store minimum & maximum products to calculate real maximum product.
+    int maxProduct(vector<int>& nums) {
+        if (nums.size() == 1) return nums[0];
+        int real_max = *max_element(nums.begin(), nums.end());
+        int cur_min{1}, cur_max{1};
+        for (auto ele : nums) {
+            int temp_max{cur_max};
+            cur_max = max({ele * cur_max, ele * cur_min, ele});
+            cur_min = min({ele * temp_max, ele * cur_min, ele});
+            real_max = max(real_max, cur_max);
+        }
+        return real_max;
+    }
+};
 
+int main() {
+    vector<int> nums{2, -2, 3, 4};
+    cout << Solution().maxProduct(nums) << endl;
     return 0;
 }
