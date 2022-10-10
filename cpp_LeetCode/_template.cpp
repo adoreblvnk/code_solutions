@@ -5,7 +5,7 @@
 #include <vector>
 
 using std::cout, std::endl;
-using std::max, std::min, std::max_element, std::min_element, std::sort;
+using std::max, std::min, std::max_element, std::min_element, std::sort, std::reverse;
 using std::string, std::vector, std::map;
 
 // overloads operator << to print formatted vectors.

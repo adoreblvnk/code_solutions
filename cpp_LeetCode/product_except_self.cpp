@@ -1,8 +1,8 @@
 // Product of Array Except Self
 // Results:
 // Runtime: 24 ms, faster than 94.56% of C++ online submissions for Product of Array Except Self.
-// Memory Usage: 23.9 MB, less than 87.79% of C++ online submissions for Product of Array Except Self.
-// https://leetcode.com/submissions/detail/819140293/
+// Memory Usage: 23.9 MB, less than 87.79% of C++ online submissions for Product of Array Except
+// Self. https://leetcode.com/submissions/detail/819140293/
 
 #include <algorithm>
 #include <iostream>
@@ -54,6 +54,13 @@ class Solution {
     // initialise vector of size of nums.
     // iterate once to calculate prefix product & set that in i+1 position.
     // iterate twice (backwards) to calculate postfix product & multiply that with i-1 position.
+    // •---------•
+    // | 1 2 3 4 |
+    // •---------•
+    // | x 1 2 3 | -> calculate prefix for i+1 position.
+    // •---------•
+    // | 2 3 4 x | -> calculate postfix for i-1 position (backwards).
+    // •---------•
     vector<int> productExceptSelf(vector<int>& nums) {
         vector<int> result(nums.size(), 1);
         int pre_product{1}, post_product{1};
