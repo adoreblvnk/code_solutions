@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-using std::cout, std::endl;
+using std::cout;
 using std::max, std::min, std::max_element, std::min_element, std::sort, std::reverse;
 using std::string, std::vector, std::map;
 
